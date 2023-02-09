@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body {
+        font  : 1.3rem sans-serif;
+        padding : 0.5em;
+        margin  : 0;
+        background : rgb(172, 27, 27);
+      }
+      form {
+        position : relative;
+        width  : 740px;
+        height : auto;
+        margin : 0 auto;
+        padding: 1em;
+        box-sizing: border-box;
+        background : #31bd24;
+        display  : grid;
+        grid-gap : 20px;
+        /*grid-template-columns : repeat(2, 1fr);*/
+        radius: 5%;
+        /*grid-template-rows    : 10em 1em 1em 1em;*/
+      }
+      select option{
+        font-size: 1.0rem sans-serif;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form class="form" action="data" method="post">
+      <label for="position">Choose a position:</label>
+      <select id="position" name="position" size="12">
+        <option value="0">AM</option>
+        <option value="1">CB</option>
+        <option value="2">CF</option>
+        <option value="3">CM</option>
+        <option value="4">DM</option>
+        <option value="5">GK</option>
+        <option value="6">LB</option>
+        <option value="7">LM</option>
+        <option value="8">LW</option>
+        <option value="9">RB</option>
+        <option value="10">RM</option>
+        <option value="11">RW</option>
+        <option value="12">SS</option>
+      </select>
+
+      <label for="age">How old is your player:</label>
+      <select id="age" name="age" size="12">
+        <option value="0">17</option>
+        <option value="1">18</option>
+        <option value="2">19</option>
+        <option value="3">20</option>
+        <option value="4">21</option>
+        <option value="5">22</option>
+        <option value="6">23</option>
+        <option value="7">24</option>
+        <option value="8">25</option>
+        <option value="9">26</option>
+        <option value="10">27</option>
+        <option value="11">28</option>
+        <option value="12">29</option>
+        <option value="13">30</option>
+        <option value="14">31</option>
+        <option value="15">32</option>
+        <option value="16">33</option>
+        <option value="17">34</option>
+        <option value="18">35</option>
+        <option value="19">36</option>
+        <option value="20">37</option>
+        <option value="21">38</option>
+      </select>
+
+      <label for="nationality">Choose a nationality:</label>
+      <select id="nationality" name="nationality" size="12">
+        <option value="0">Algeria</option>
+        <option value="1">Argentina</option>
+        <option value="2">Armenia</option>
+        <option value="3">Australia</option>
+        <option value="4">Austria</option>
+        <option value="5">Belgium</option>
+        <option value="6">Benin</option>
+        <option value="7">Bermuda</option>
+        <option value="8">Bosnia</option>
+        <option value="9">Brazil</option>
+        <option value="10">Cameroon</option>
+        <option value="11">Canada</option>
+        <option value="12">Chile</option>
+        <option value="13">Colombia</option>
+        <option value="14">Congo DR</option>
+        <option value="15">Cote d'Ivoire</option>
+        <option value="16">Croatia</option>
+        <option value="17">Curacao</option>
+        <option value="18">Czech Republic</option>
+        <option value="19">Denmark</option>
+        <option value="20">Ecuador</option>
+        <option value="21">Egypt</option>
+        <option value="22">England</option>
+        <option value="23">Estonia</option>
+        <option value="24">Finland</option>
+        <option value="25">France</option>
+        <option value="26">Germany</option>
+        <option value="27">Ghana</option>
+        <option value="28">Greece</option>
+        <option value="29">Iceland</option>
+        <option value="30">Ireland</option>
+        <option value="31">Israel</option>
+        <option value="32">Italy</option>
+        <option value="33">Jamaica</option>
+        <option value="34">Japan</option>
+        <option value="35">Kenya</option>
+        <option value="36">Mali</option>
+        <option value="37">Morocco</option>
+        <option value="38">Netherlands</option>
+        <option value="39">New Zealand</option>
+        <option value="40">Nigeria</option>
+        <option value="41">Northern Ireland</option>
+        <option value="42">Norway</option>
+        <option value="43">Poland</option>
+        <option value="44">Portugal</option>
+        <option value="45">Romania</option>
+        <option value="46">Scotland</option>
+        <option value="47">Senegal</option>
+        <option value="48">Serbia</option>
+        <option value="49">Slovenia</option>
+        <option value="50">South Korea</option>
+        <option value="51">Spain</option>
+        <option value="52">Sweden</option>
+        <option value="53">Switzerland</option>
+        <option value="54">The Gambia</option>
+        <option value="55">Trinidad and Tobago</option>
+        <option value="56">Tunisia</option>
+        <option value="57">United States</option>
+        <option value="58">Uruguay</option>
+        <option value="59">Venezuela</option>
+        <option value="60">Wales</option>
+      </select>
+
+      <label for="page_views">Page views (between 3 and 7664):</label>
+      <input type="number" id="page_views" name="page_views" min="3" max="7664">
+
+      <label for="fpl_value">Choose the value of the player in Fantasy Player League:</label>
+      <select id="fpl_value" name="fpl_value" size="12">
+        <option value="4.0">4.0</option>
+        <option value="4.5">4.5</option>
+        <option value="5.0">5.0</option>
+        <option value="5.5">5.5</option>
+        <option value="6.0">6.0</option>
+        <option value="6.5">6.5</option>
+        <option value="7.0">7.0</option>
+        <option value="7.5">7.5</option>
+        <option value="8.0">8.0</option>
+        <option value="8.5">8.5</option>
+        <option value="9.0">9.0</option>
+        <option value="9.5">9.5</option>
+        <option value="10.0">10.0</option>
+        <option value="10.5">10.5</option>
+        <option value="11.5">11.5</option>
+        <option value="12.0">12.0</option>
+        <option value="12.5">12.5</option>
+      </select>
+
+      <label for="fpl_points">FPL Points (between 0 and 264):</label>
+      <input type="number" id="fpl_points" name="fpl_points" min="0" max="264">
+
+      <label for="fpl_sel">FPL Selection Percentage(between 0.00 and 0.45):</label>
+      <input type="number" id="fpl_sel" name="fpl_sel" step="0.01" min="0.00" max="0.45">
+
+      <label for="club_id">Choose the player's club:</label>
+      <select id="club_id" name="club_id" size="12">
+        <option value="1">Arsenal</option>
+        <option value="2">Bournemouth</option>
+        <option value="3">Brighton and Hove</option>
+        <option value="4">Burnley</option>
+        <option value="5">Chelsea</option>
+        <option value="6">Crystal Palace</option>
+        <option value="7">Everton</option>
+        <option value="8">Huddersfield</option>
+        <option value="9">Leicester City</option>
+        <option value="10">Liverpool</option>
+        <option value="11">Manchester City</option>
+        <option value="12">Manchester United</option>
+        <option value="13">Newcastle United</option>
+        <option value="14">Southampton</option>
+        <option value="15">Stoke City</option>
+        <option value="16">Swansea</option>
+        <option value="17">Tottenham</option>
+        <option value="18">Watford</option>
+        <option value="19">West Brom</option>
+        <option value="20">West Ham</option>
+      </select>
+
+      <label for="big_club">Is this club one of the top 6 clubs?</label>
+      <select id="big_club" name="big_club" size="2">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+
+      <label for="new_foreign">Is this player a new signing from a different league?</label>
+      <select id="new_foreign" name="new_foreign" size="2">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+
+      <label for="new_signing">Is this player a new signing?</label>
+      <select id="new_signing" name="new_signing" size="2">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+      <input type="submit" name="submit" value="submit" class="button">
+    </form>
+  </body>
+</html>
